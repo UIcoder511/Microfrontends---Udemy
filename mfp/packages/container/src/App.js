@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
-import MarketingApp from "./MarketingApp/MarketingApp";
+import MarketingApp from "./components/MarketingApp";
+import Header from "./components/Header";
+import { BrowserRouter } from "react-router-dom";
 
 export default () => {
   //test1
   return (
-    <>
-      <MarketingApp />
-    </>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <MarketingApp />
+      </div>
+    </BrowserRouter>
   );
 };
